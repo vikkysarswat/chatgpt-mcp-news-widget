@@ -1,0 +1,31 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "news_widget",
+  "name_for_human": "News Widget",
+  "description_for_model": "Fetch and display news articles from MongoDB with rich widget formatting. Supports filtering by category, tags, time range, and search queries.",
+  "description_for_human": "Get the latest news articles displayed in beautiful, interactive widgets.",
+  "logo_url": "https://via.placeholder.com/150?text=News",
+  "contact_email": "vikky.sarswat@gmail.com",
+  "legal_info_url": "https://github.com/vikkysarswat/chatgpt-mcp-news-widget",
+  "api": {
+    "type": "mcp",
+    "url": "http://localhost:3000",
+    "has_user_authentication": false
+  },
+  "capabilities": {
+    "tools": [
+      {
+        "name": "fetch_news",
+        "description": "Fetch news articles from database with various filters"
+      }
+    ],
+    "rendering": {
+      "supports_widgets": true,
+      "widget_types": [
+        "news_card",
+        "news_list",
+        "news_grid"
+      ]
+    }
+  }
+}
